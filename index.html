@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IronFuel | Proteínas, creatina y pre entrenos</title>
+  <meta name="description" content=>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">Iron<span>Fuel</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls=>
+        <span class="nav-toggle-text">Menú</span>
+      </button>
+
+      <nav id="menu-principal" class="site-nav" aria-label=>
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#guia">Guía</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- SECCIÓN 1: INICIO -->
+    <section id="inicio" class="hero" aria-labelledby=>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Suplementación deportiva</p>
+          <h1 id="titulo-inicio">Proteínas, creatina y pre entrenos para tu mejor versión</h1>
+          <p class="lead">Elige tu suplemento con información clara: para qué sirve, cómo se usa y qué debes tener en cuenta antes de comprarlo.</p>
+          <p class="hero-actions">
+            <a class="btn btn-primary" href="#productos">Ver productos</a>
+            <a class="btn btn-secondary" href="#guia">¿Cómo elegir?</a>
+          </p>
+        </div>
+        <figure class="hero-figure">
+          <img src="proteina.svg" alt= width="320" height="320">
+          <figcaption class="visually-hidden">Envase de proteína en polvo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: PRODUCTOS -->
+    <section id="productos" class="section" aria-labelledby=>
+      <div class="container">
+        <h2 id="titulo-productos">Nuestros productos</h2>
+        <p class="section-intro">Filtra por categoría para encontrar lo que necesitas.</p>
+
+        <div class="filters" role="group" aria-label="Filtrar productos por categoría">
+          <button type="button" class="filter-btn" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter-btn" data-filter="proteina" aria-pressed="false">Proteínas</button>
+          <button type="button" class="filter-btn" data-filter="creatina" aria-pressed="false">Creatina</button>
+          <button type="button" class="filter-btn" data-filter="preentreno" aria-pressed="false">Pre entrenos</button>
+          <button type="button" class="filter-btn" data-filter="Otros" aria-pressed="true">Otros</button>
+        </div>
+        <p id="filter-status" class="filter-status" role="status" aria-live="polite">Mostrando 9 productos.</p>
+
+        <ul class="product-grid" id="product-grid">
+          <!-- Proteínas -->
+          <li class="product" data-category="proteina">
+            <article class="card">
+              <img src="img/proteina-1.jpg" onerror="this.onerror=null;this.src='proteina.svg'" alt=width="200" height="200" loading="lazy">
+              <h3>Whey Isolate Vainilla</h3>
+              <p class="card-desc">Proteína aislada de rápida absorción. Presentación de 2 lb.</p>
+              <ul class="specs">
+                <li>25 g de proteína por porción</li>
+                <li>29 porciones</li>
+              </ul>
+              <p class="price">$39.90</p>
+              <a class="btn btn-primary" href="#contacto">Consultar</a>
+            </article>
+          </li>
+          <li class="product" data-category="proteina">
+            <article class="card">
+              <img src="img/proteina-2.jpg" onerror="this.onerror=null;this.src='proteina.svg'" alt= width="200" height="200" loading="lazy">
+              <h3>Whey Concentrada Chocolate</h3>
+              <p class="card-desc">Opción rendidora para el día a día. Presentación de 5 lb.</p>
+              <ul class="specs">
+                <li>24 g de proteína por porción</li>
+                <li>69 porciones</li>
+              </ul>
+              <p class="price">$69.90</p>
+              <a class="btn btn-primary" href="#contacto">Consultar</a>
+            </article>
+          </li>
+          <li class="product" data-category="proteina">
+            <article class="card">
+              <img src="img/proteina-3.jpg" onerror="this.onerror=null;this.src='proteina.svg'" alt= width="200" height="200" loading="lazy">
+              <h3>Proteína Vegetal Cacao</h3>
+              <p class="card-desc">Mezcla de arveja y arroz, sin lactosa. Presentación de 2 lb.</p>
+              <ul class="specs">
+                <li>22 g de proteína por porción</li>
+                <li>30 porciones</li>
+              </ul>
+              <p class="price">$44.90</p>
+              <a class="btn btn-primary" href="#contacto">Consultar</a>
+            </article>
+          </li>
+
+          <!-- Creatina -->
+          <li class="product" data-category="creatina">
+            <article class="card">
+              <img src="img/creatina-1.jpg" onerror="this.onerror=null;this.src='creatina.svg'" alt= width="200" height="200" loading="lazy">
+              <h3>Creatina Monohidratada 300 g</h3>
+              <p class="card-desc">Polvo sin sabor, fácil de mezclar con agua o tu batido.</p>
+              <ul class="specs">
+                <li>5 g por porción</li>
+                <li>60 porciones</li>
+              </ul>
+              <p class="price">$24.90</p>
+              <a class="btn btn-primary" href="#contacto">Consultar</a>
+            </article>
+          </li>
+          <li class="product" data-category="creatina">
+            <article class="card">
+              <img src="img/creatina-2.jpg" onerror="this.onerror=null;this.src='creatina.svg'" alt= width="200" height="200" loading="lazy">
+              <h3>Creatina Micronizada 500 g</h3>
+              <p class="card-desc">Partículas más finas para una mejor disolución.</p>
+              <ul class="specs">
+                <li>5 g por porción</li>
+                <li>100 porciones</li>
+              </ul>
+              <p class="price">$34.90</p>
+              <a class="btn btn-primary" href="#contacto">Consultar</a>
+            </article>
+          </li>
+          <li class="product" data-category="creatina">
+            <article class="card">
+              <img src="img/creatina-3.jpg" onerror="this.onerror=null;this.src='creatina.svg'" alt=" width="200" height="200" loading="lazy">
+              <h3>Creatina en Cápsulas</h3>
+              <p class="card-desc">Práctica para llevar, sin necesidad de mezclar.</p>
+              <ul class="specs">
+                <li>120 cápsulas</li>
+                <li>Sin sabor</li>
+              </ul>
+              <p class="price">$22.90</p>
+              <a class="btn btn-primary" href="#contacto">Consultar</a>
+            </article>
+          </li>
+
+          <!-- Pre entrenos -->
+          <li class="product" data-category="preentreno">
+            <article class="card">
+              <img src="img/preentreno-1.jpg" onerror="this.onerror=null;this.src='preentreno.svg'" alt= width="200" height="200" loading="lazy">
+              <h3>Pre Entreno Explosive</h3>
+              <p class="card-desc">Con cafeína y beta-alanina. Sabor frutos rojos.</p>
+              <ul class="specs">
+                <li>30 porciones</li>
+                <li>Contiene cafeína</li>
+              </ul>
+              <p class="price">$29.90</p>
+              <a class="btn btn-primary" href="#contacto">Consultar</a>
+            </article>
+          </li>
+          <li class="product" data-category="preentreno">
+            <article class="card">
+              <img src="img/preentreno-2.jpg" onerror="this.onerror=null;this.src='preentreno.svg'" alt= width="200" height="200" loading="lazy">
+              <h3>Pre Entreno Sin Estimulantes</h3>
+              <p class="card-desc">Para quienes entrenan de noche o evitan la cafeína.</p>
+              <ul class="specs">
+                <li>30 porciones</li>
+                <li>Sin cafeína</li>
+              </ul>
+              <p class="price">$27.90</p>
+              <a class="btn btn-primary" href="#contacto">Consultar</a>
+            </article>
+          </li>
+          <li class="product" data-category="preentreno">
+            <article class="card">
+              <img src="img/preentreno-3.jpg" onerror="this.onerror=null;this.src='preentreno.svg'" alt= width="200" height="200" loading="lazy">
+              <h3>Pre Entreno Pump</h3>
+              <p class="card-desc">Fórmula con citrulina enfocada en el bombeo muscular.</p>
+              <ul class="specs">
+                <li>30 porciones</li>
+                <li>Cafeína moderada</li>
+              </ul>
+              <p class="price">$31.90</p>
+              <a class="btn btn-primary" href="#contacto">Consultar</a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: GUÍA -->
+    <section id="guia" class="section section-alt" aria-labelledby=>
+      <div class="container">
+        <h2 id="titulo-guia">Guía rápida para elegir</h2>
+        <p class="section-intro">Información general. No reemplaza la consulta con un profesional de la salud o un nutricionista.</p>
+
+        <div class="guide-grid">
+          <article class="guide-card">
+            <h3>Proteínas</h3>
+            <p>Ayudan a completar tu requerimiento diario de proteína cuando la comida no alcanza. La isolate tiene menos lactosa; la concentrada suele ser más económica; la vegetal es una alternativa sin lácteos.</p>
+          </article>
+          <article class="guide-card">
+            <h3>Creatina</h3>
+            <p>La monohidratada es la forma más estudiada. Se suele tomar una dosis pequeña y constante cada día. Mantente bien hidratado y consulta si tienes alguna condición médica.</p>
+          </article>
+          <article class="guide-card">
+            <h3>Pre entrenos</h3>
+            <p>Suelen contener cafeína u otros estimulantes. Revisa la etiqueta, empieza con media porción para probar tu tolerancia y evita tomarlos cerca de la hora de dormir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: CONTACTO -->
+    <section id="contacto" class="section" aria-labelledby="titulo-contacto">
+      <div class="container contact-inner">
+        <div>
+          <h2 id="titulo-contacto">Contáctanos</h2>
+          <p class="section-intro">Cuéntanos qué producto te interesa y te responderemos con disponibilidad y precio final.</p>
+        </div>
+
+        <form id="contact-form" class="form" novalidate>
+          <p id="form-summary" class="form-summary" role="alert" tabindex="-1" hidden></p>
+
+          <div class="field">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required aria-describedby="error-nombre">
+            <p id="error-nombre" class="error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" autocomplete="email" required aria-describedby="error-correo">
+            <p id="error-correo" class="error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="producto">Producto de interés</label>
+            <select id="producto" name="producto" required aria-describedby="error-producto">
+              <option value="">Selecciona una opción</option>
+              <option value="proteina">Proteínas</option>
+              <option value="creatina">Creatina</option>
+              <option value="preentreno">Pre entrenos</option>
+            </select>
+            <p id="error-producto" class="error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required maxlength="100" aria-describedby=></textarea>
+            <p id="ayuda-mensaje" class="help">Maximo 100 caracteres.</p>
+            <p id="error-mensaje" class="error" hidden></p>
+          </div>
+
+          <div class="field field-check">
+            <input type="checkbox" id="acepto" name="acepto" required aria-describedby=>
+            <label for="acepto">Acepto que me contacten sobre mi consulta.</label>
+            <p id="error-acepto" class="error" hidden></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar consulta</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 IronFuel. Desarrollado por <strong>Michael Nivelo</strong> </p>
+      <p class="disclaimer">Los suplementos no sustituyen una alimentación equilibrada. Consulta a un profesional de la salud antes de usarlos.</p>
+    </div>
+  </footer>
+</body>
+</html>
