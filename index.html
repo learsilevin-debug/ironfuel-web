@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IronFuel | Proteínas, creatina y pre entrenos</title>
-  <meta name="description" content=>
+  <meta name="description" content="IronFuel: catálogo de proteínas, creatina y pre entrenos para tu rutina de gimnasio, con guía para elegir y formulario de contacto.">
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
 </head>
@@ -15,11 +15,11 @@
     <div class="container header-inner">
       <a class="brand" href="#inicio">Iron<span>Fuel</span></a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls=>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
         <span class="nav-toggle-text">Menú</span>
       </button>
 
-      <nav id="menu-principal" class="site-nav" aria-label=>
+      <nav id="menu-principal" class="site-nav" aria-label="Principal">
         <ul class="nav-list">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#productos">Productos</a></li>
@@ -32,7 +32,7 @@
 
   <main id="contenido">
     <!-- SECCIÓN 1: INICIO -->
-    <section id="inicio" class="hero" aria-labelledby=>
+    <section id="inicio" class="hero" aria-labelledby="titulo-inicio">
       <div class="container hero-inner">
         <div class="hero-text">
           <p class="eyebrow">Suplementación deportiva</p>
@@ -44,14 +44,14 @@
           </p>
         </div>
         <figure class="hero-figure">
-          <img src="proteina.svg" alt= width="320" height="320">
+          <img src="proteina.svg" alt="Ilustración de un envase de proteína en polvo de color naranja con una etiqueta que dice Whey" width="320" height="320">
           <figcaption class="visually-hidden">Envase de proteína en polvo</figcaption>
         </figure>
       </div>
     </section>
 
     <!-- SECCIÓN 2: PRODUCTOS -->
-    <section id="productos" class="section" aria-labelledby=>
+    <section id="productos" class="section" aria-labelledby="titulo-productos">
       <div class="container">
         <h2 id="titulo-productos">Nuestros productos</h2>
         <p class="section-intro">Filtra por categoría para encontrar lo que necesitas.</p>
@@ -61,7 +61,6 @@
           <button type="button" class="filter-btn" data-filter="proteina" aria-pressed="false">Proteínas</button>
           <button type="button" class="filter-btn" data-filter="creatina" aria-pressed="false">Creatina</button>
           <button type="button" class="filter-btn" data-filter="preentreno" aria-pressed="false">Pre entrenos</button>
-          <button type="button" class="filter-btn" data-filter="Otros" aria-pressed="true">Otros</button>
         </div>
         <p id="filter-status" class="filter-status" role="status" aria-live="polite">Mostrando 9 productos.</p>
 
@@ -69,7 +68,7 @@
           <!-- Proteínas -->
           <li class="product" data-category="proteina">
             <article class="card">
-              <img src="img/proteina-1.jpg" onerror="this.onerror=null;this.src='proteina.svg'" alt=width="200" height="200" loading="lazy">
+              <img src="img/proteina-1.jpg" onerror="this.onerror=null;this.src='proteina.svg'" alt="Envase de Whey Isolate sabor vainilla" width="200" height="200" loading="lazy">
               <h3>Whey Isolate Vainilla</h3>
               <p class="card-desc">Proteína aislada de rápida absorción. Presentación de 2 lb.</p>
               <ul class="specs">
@@ -82,7 +81,7 @@
           </li>
           <li class="product" data-category="proteina">
             <article class="card">
-              <img src="img/proteina-2.jpg" onerror="this.onerror=null;this.src='proteina.svg'" alt= width="200" height="200" loading="lazy">
+              <img src="img/proteina-2.jpg" onerror="this.onerror=null;this.src='proteina.svg'" alt="Envase de Whey Concentrada sabor chocolate" width="200" height="200" loading="lazy">
               <h3>Whey Concentrada Chocolate</h3>
               <p class="card-desc">Opción rendidora para el día a día. Presentación de 5 lb.</p>
               <ul class="specs">
@@ -95,7 +94,7 @@
           </li>
           <li class="product" data-category="proteina">
             <article class="card">
-              <img src="img/proteina-3.jpg" onerror="this.onerror=null;this.src='proteina.svg'" alt= width="200" height="200" loading="lazy">
+              <img src="img/proteina-3.jpg" onerror="this.onerror=null;this.src='proteina.svg'" alt="Envase de proteína vegetal sabor cacao" width="200" height="200" loading="lazy">
               <h3>Proteína Vegetal Cacao</h3>
               <p class="card-desc">Mezcla de arveja y arroz, sin lactosa. Presentación de 2 lb.</p>
               <ul class="specs">
@@ -110,7 +109,7 @@
           <!-- Creatina -->
           <li class="product" data-category="creatina">
             <article class="card">
-              <img src="img/creatina-1.jpg" onerror="this.onerror=null;this.src='creatina.svg'" alt= width="200" height="200" loading="lazy">
+              <img src="img/creatina-1.jpg" onerror="this.onerror=null;this.src='creatina.svg'" alt="Envase azul de creatina monohidratada de 300 gramos" width="200" height="200" loading="lazy">
               <h3>Creatina Monohidratada 300 g</h3>
               <p class="card-desc">Polvo sin sabor, fácil de mezclar con agua o tu batido.</p>
               <ul class="specs">
@@ -123,7 +122,7 @@
           </li>
           <li class="product" data-category="creatina">
             <article class="card">
-              <img src="img/creatina-2.jpg" onerror="this.onerror=null;this.src='creatina.svg'" alt= width="200" height="200" loading="lazy">
+              <img src="img/creatina-2.jpg" onerror="this.onerror=null;this.src='creatina.svg'" alt="Envase azul de creatina micronizada de 500 gramos" width="200" height="200" loading="lazy">
               <h3>Creatina Micronizada 500 g</h3>
               <p class="card-desc">Partículas más finas para una mejor disolución.</p>
               <ul class="specs">
@@ -136,7 +135,7 @@
           </li>
           <li class="product" data-category="creatina">
             <article class="card">
-              <img src="img/creatina-3.jpg" onerror="this.onerror=null;this.src='creatina.svg'" alt=" width="200" height="200" loading="lazy">
+              <img src="img/creatina-3.jpg" onerror="this.onerror=null;this.src='creatina.svg'" alt="Frasco azul de creatina en cápsulas" width="200" height="200" loading="lazy">
               <h3>Creatina en Cápsulas</h3>
               <p class="card-desc">Práctica para llevar, sin necesidad de mezclar.</p>
               <ul class="specs">
@@ -151,7 +150,7 @@
           <!-- Pre entrenos -->
           <li class="product" data-category="preentreno">
             <article class="card">
-              <img src="img/preentreno-1.jpg" onerror="this.onerror=null;this.src='preentreno.svg'" alt= width="200" height="200" loading="lazy">
+              <img src="img/preentreno-1.jpg" onerror="this.onerror=null;this.src='preentreno.svg'" alt="Envase morado de pre entreno sabor frutos rojos" width="200" height="200" loading="lazy">
               <h3>Pre Entreno Explosive</h3>
               <p class="card-desc">Con cafeína y beta-alanina. Sabor frutos rojos.</p>
               <ul class="specs">
@@ -164,7 +163,7 @@
           </li>
           <li class="product" data-category="preentreno">
             <article class="card">
-              <img src="img/preentreno-2.jpg" onerror="this.onerror=null;this.src='preentreno.svg'" alt= width="200" height="200" loading="lazy">
+              <img src="img/preentreno-2.jpg" onerror="this.onerror=null;this.src='preentreno.svg'" alt="Envase morado de pre entreno sin estimulantes" width="200" height="200" loading="lazy">
               <h3>Pre Entreno Sin Estimulantes</h3>
               <p class="card-desc">Para quienes entrenan de noche o evitan la cafeína.</p>
               <ul class="specs">
@@ -177,7 +176,7 @@
           </li>
           <li class="product" data-category="preentreno">
             <article class="card">
-              <img src="img/preentreno-3.jpg" onerror="this.onerror=null;this.src='preentreno.svg'" alt= width="200" height="200" loading="lazy">
+              <img src="img/preentreno-3.jpg" onerror="this.onerror=null;this.src='preentreno.svg'" alt="Envase morado de pre entreno Pump con citrulina" width="200" height="200" loading="lazy">
               <h3>Pre Entreno Pump</h3>
               <p class="card-desc">Fórmula con citrulina enfocada en el bombeo muscular.</p>
               <ul class="specs">
@@ -193,7 +192,7 @@
     </section>
 
     <!-- SECCIÓN 3: GUÍA -->
-    <section id="guia" class="section section-alt" aria-labelledby=>
+    <section id="guia" class="section section-alt" aria-labelledby="titulo-guia">
       <div class="container">
         <h2 id="titulo-guia">Guía rápida para elegir</h2>
         <p class="section-intro">Información general. No reemplaza la consulta con un profesional de la salud o un nutricionista.</p>
@@ -251,13 +250,13 @@
 
           <div class="field">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required maxlength="100" aria-describedby=></textarea>
-            <p id="ayuda-mensaje" class="help">Maximo 100 caracteres.</p>
+            <textarea id="mensaje" name="mensaje" rows="4" required minlength="10" aria-describedby="ayuda-mensaje error-mensaje"></textarea>
+            <p id="ayuda-mensaje" class="help">Mínimo 10 caracteres.</p>
             <p id="error-mensaje" class="error" hidden></p>
           </div>
 
           <div class="field field-check">
-            <input type="checkbox" id="acepto" name="acepto" required aria-describedby=>
+            <input type="checkbox" id="acepto" name="acepto" required aria-describedby="error-acepto">
             <label for="acepto">Acepto que me contacten sobre mi consulta.</label>
             <p id="error-acepto" class="error" hidden></p>
           </div>
@@ -270,7 +269,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 IronFuel. Desarrollado por <strong>Michael Nivelo</strong> </p>
+      <p>&copy; 2026 IronFuel. Proyecto académico, Universidad Politécnica Salesiana.</p>
       <p class="disclaimer">Los suplementos no sustituyen una alimentación equilibrada. Consulta a un profesional de la salud antes de usarlos.</p>
     </div>
   </footer>
